@@ -4,8 +4,8 @@ const form = document.querySelector('#formulario');
 form.addEventListener('submit', function (event) {
   //evento
   event.preventDefault();
-  const inputPeso = e.target.querySelector('#peso');
-  const inputAltura = e.target.querySelector('#altura'); //exatamente qual elemento foi acionado na tela
+  const inputPeso = event.target.querySelector('#peso');
+  const inputAltura = event.target.querySelector('#altura'); //exatamente qual elemento foi acionado na tela
   const peso = Number(inputPeso.value);
   const altura = Number(inputAltura.value);
 
@@ -56,7 +56,7 @@ function setResultado (msg, isValid) {
   const p = criaP();
 
   if (isValid) {
-    p.classList.add ('paraglafo-resultado');
+    p.classList.add ('paragrafo-resultado');
   } else {
       p.classList.add('bad');
   }  
