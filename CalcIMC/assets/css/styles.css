@@ -27,7 +27,9 @@ body {
   border-radius: 10px;
 }
 
-form input, form label, form button {
+form input,
+form label,
+form button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -62,11 +64,12 @@ form button:active {
   background: var(--primary-color-active);
 }
 
-.paragrafo-resultado, .bad {
+.paragrafo-resultado,
+.bad {
   background: rgb(109, 255, 182);
   padding: 10px;
 }
 
 .bad {
-  background: rgb(240, 82, 82); 
+  background: rgb(240, 82, 82);
 }
